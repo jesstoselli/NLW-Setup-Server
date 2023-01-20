@@ -35,7 +35,6 @@ export async function appRoutes(app: FastifyInstance) {
     });
 
     const { date } = getDayParams.parse(req.query);
-
     // get day, do próprio JS, retorna o dia da semana. Get date retorna a data.
     const parsedDate = dayjs(date).startOf("day");
     const weekDay = parsedDate.get("day");

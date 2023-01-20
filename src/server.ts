@@ -1,5 +1,4 @@
 import Fastify from "fastify/fastify.js";
-
 import cors from "@fastify/cors";
 import { appRoutes } from "./routes";
 
