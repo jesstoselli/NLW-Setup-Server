@@ -136,7 +136,7 @@ export async function appRoutes(app: FastifyInstance) {
         (
           SELECT
             cast(count(*) as float)
-          FROM habit_week_days HDW
+          FROM habits_week_days HDW
           JOIN habits H
             ON H.id = HDW.habit_id
           WHERE
